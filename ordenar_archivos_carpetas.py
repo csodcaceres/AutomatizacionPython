@@ -43,3 +43,6 @@ for archivo in os.listdir(ruta):
 
     elif archivo.endswith(".ipynb"):
         shutil.move(os.path.join(ruta, archivo), os.path.join(ruta, "Archivos_ipynb", archivo))
+
+    elif archivo.endswith(".xls") or archivo.endswith(".xlsx"):
+        shutil.move(os.path.join(ruta, archivo), os.path.join(ruta, "Documentos_Excel", archivo))

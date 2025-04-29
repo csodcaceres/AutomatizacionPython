@@ -11,7 +11,7 @@ El script crea y organiza archivos en las siguientes carpetas:
 - `Videos` (`.mp4`)
 - `Documentos_Word` (`.docx`)
 - `Documentos_txt` (`.txt`)
-- `Documentos_Excel` (✳️ *por agregar*)
+- `Documentos_Excel` (`.xls`, `.xlsx`)
 - `Archivos_ISO` (`.iso`)
 - `Documentos_PowerPoint` (`.pptx`)
 - `Archivos_exe` (`.exe`)
