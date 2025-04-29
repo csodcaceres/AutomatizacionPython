@@ -23,7 +23,7 @@ El script crea y organiza archivos en las siguientes carpetas:
 
 1. **Edita la ruta base** en el script:
    ```python
-   ruta = "D:/Oscar/PythonClientes/datosParaOdenar"
+   ruta = "ruta_del_scrpit"
    ```
    Asegúrate de que esta ruta exista y contenga los archivos a ordenar.
 
