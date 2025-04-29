@@ -51,4 +51,4 @@ elif archivo.endswith(".xlsx") or archivo.endswith(".xls"):
 ## 📄 Licencia
 
 Este proyecto se distribuye bajo la licencia MIT. Puedes modificarlo y reutilizarlo libremente.
-Este Script ajecutarlo en consola.
+Este Script ajecutarlo en consola de comando.
