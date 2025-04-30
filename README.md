@@ -9,3 +9,11 @@ Script realizado para correr en linea de comando.
 ### 2) ordenar_archivos_carpetas_tkinter.py
 Organizador de Archivos por Extensión (Tkinter)
 Este script en Python permite ordenar automáticamente los archivos de una carpeta en subcarpetas según su tipo de extensión, utilizando una interfaz gráfica sencilla con tkinter.
+
+## 📄 Licencia
+
+Estos proyectos se distribuye bajo la licencia MIT. Puedes modificarlo y reutilizarlo libremente.
+
+## 🧑‍💻 Autor
+
+Oscar Daniel Cáceres
