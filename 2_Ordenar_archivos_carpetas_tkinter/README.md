@@ -73,6 +73,10 @@ Después:
  ├── Videos
      └── video.mp4
 ```
+## 📄 Licencia
+
+Este proyecto se distribuye bajo la licencia MIT. Puedes modificarlo y reutilizarlo libremente.
+Este Script ajecutarlo en consola de comando.
 
 ## 🧑‍💻 Autor
 
