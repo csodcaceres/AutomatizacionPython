@@ -1,35 +1,30 @@
 # Organizador de Archivos por Extensión (Tkinter)
 
-Este script en Python permite ordenar automáticamente los archivos de una carpeta en subcarpetas según su tipo de extensión, utilizando una interfaz gráfica sencilla con `tkinter`.
+Este script en Python permite ordenar automáticamente los archivos de una carpeta en subcarpetas según su tipo de extensión, utilizando una interfaz gráfica con `tkinter`. Incluye manejo de errores para mayor robustez.
 
 ## 📌 Funcionalidad
 
 Al ejecutar el script:
 
-1. Se abre un cuadro de diálogo para seleccionar la carpeta que deseas ordenar.
-2. Se escanean todos los archivos en esa carpeta.
-3. Según su extensión, los archivos se mueven a subcarpetas específicas (que se crean automáticamente si no existen).
-
-Por ejemplo:
-- Archivos `.jpg`, `.png`, `.jpeg` se moverán a la carpeta `Imagenes`.
-- Archivos `.pdf` se moverán a la carpeta `PDFs`.
-- Archivos `.docx`, `.doc` se moverán a la carpeta `Documentos_Word`.
-- Y así sucesivamente...
+1. Se abre un cuadro de diálogo para seleccionar la carpeta a ordenar.
+2. Se analizan los archivos presentes en esa carpeta.
+3. Los archivos se mueven a subcarpetas según su extensión. Si la subcarpeta no existe, se crea automáticamente.
+4. Se muestra una ventana informando si el proceso fue exitoso o si hubo errores (por ejemplo, archivos en uso o no encontrados).
 
 ## 🧠 Extensiones Soportadas
 
-| Extensión     | Carpeta de destino           |
-|---------------|------------------------------|
-| `.jpg`, `.png`, `.jpeg` | Imagenes              |
-| `.pdf`        | PDFs                         |
-| `.mp4`        | Videos                       |
-| `.txt`        | Documentos_txt               |
-| `.doc`, `.docx` | Documentos_Word            |
-| `.xlsx`, `.xls` | Documentos_Excel           |
-| `.iso`        | Archivos_ISO                 |
-| `.pptx`       | Documentos_PowerPoint        |
-| `.exe`        | Archivos_exe                 |
-| `.ipynb`      | Archivos_ipynb               |
+| Extensión         | Carpeta de destino         |
+|-------------------|----------------------------|
+| `.jpg`, `.png`, `.jpeg` | Imagenes             |
+| `.pdf`            | PDFs                       |
+| `.mp4`            | Videos                     |
+| `.txt`            | Documentos_txt             |
+| `.doc`, `.docx`   | Documentos_Word            |
+| `.xlsx`, `.xls`   | Documentos_Excel           |
+| `.iso`            | Archivos_ISO               |
+| `.pptx`           | Documentos_PowerPoint      |
+| `.exe`            | Archivos_exe               |
+| `.ipynb`          | Archivos_ipynb             |
 
 ## 🚀 Requisitos
 
@@ -37,7 +32,7 @@ Por ejemplo:
 - Librerías estándar:
   - `os`
   - `shutil`
-  - `tkinter` (incluida en la mayoría de las instalaciones de Python)
+  - `tkinter` (incluida por defecto con Python)
 
 ## ▶️ Ejecución
 
@@ -45,31 +40,39 @@ Por ejemplo:
 python ordenar_archivos_carpetas_tkinter.py
 ```
 
-## 🛠️ Personalización
+Aparecerá una ventana para seleccionar la carpeta. Luego, los archivos serán organizados según su extensión.
 
-Puedes agregar nuevas extensiones o modificar las carpetas de destino editando el diccionario `extensiones` en el script.
+## ⚠️ Manejo de Errores
 
-## 📂 Estructura de Carpetas de Ejemplo
+- Si no se selecciona ninguna carpeta, se muestra una advertencia.
+- Si algún archivo no se puede mover (por estar en uso o no existir), el error se registra y se muestra al final del proceso.
+- Se utiliza `messagebox` para mostrar ventanas emergentes informativas o de error.
+
+## 📂 Ejemplo de Estructura
 
 Antes:
 
-📁 Descargas  
- ├── documento.docx  
- ├── imagen.jpg  
- ├── video.mp4  
- ├── informe.pdf  
+```
+📁 Descargas
+ ├── imagen.jpg
+ ├── informe.pdf
+ ├── documento.docx
+ ├── video.mp4
+```
 
 Después:
 
-📁 Descargas  
- ├── Documentos_Word  
- │   └── documento.docx  
- ├── Imagenes  
- │   └── imagen.jpg  
- ├── Videos  
- │   └── video.mp4  
- ├── PDFs  
-     └── informe.pdf  
+```
+📁 Descargas
+ ├── Imagenes
+ │   └── imagen.jpg
+ ├── PDFs
+ │   └── informe.pdf
+ ├── Documentos_Word
+ │   └── documento.docx
+ ├── Videos
+     └── video.mp4
+```
 
 ## 🧑‍💻 Autor
 
