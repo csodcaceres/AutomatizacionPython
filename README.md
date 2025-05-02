@@ -15,6 +15,9 @@ Este script en Python organiza automáticamente archivos dentro de una carpeta e
 Está diseñado para mantener tus directorios limpios y ordenados.
 Script realizado para correr en linea de comando.
 
+### 4) Ordenas_Archivo_carpetas_fechas_tk_V2.py
+Este script en Python permite ordenar automáticamente los archivos de una carpeta seleccionada, clasificándolos por tipo de archivo (por su extensión) y moviéndolos a subcarpetas organizadas por fecha. La interfaz gráfica para seleccionar la carpeta es provista por `Tkinter`.
+
 ## 📄 Licencia
 
 Estos proyectos se distribuye bajo la licencia MIT. Puedes modificarlo y reutilizarlo libremente.
